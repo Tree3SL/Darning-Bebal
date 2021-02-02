@@ -67,6 +67,11 @@ public class PlayerManager : MonoBehaviour
             EnableControls();
             animator.PlayerUp();
         }
+        else if(Input.GetKeyDown(KeyCode.Backspace) || Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            DisableControls();
+            animator.PlayStun();
+        }
     }
 
 
