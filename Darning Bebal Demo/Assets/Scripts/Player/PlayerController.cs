@@ -49,12 +49,10 @@ public class PlayerController : MonoBehaviour
         if (axis < 0)
         {
             move += (Vector2.left * velocity);
-            move += (Vector2.down * (velocity/4));
         }
         else if (axis > 0)
         {
             move += (Vector2.right * velocity);
-            move += (Vector2.down * (velocity/4));
         }
 
         MovePlayer(move);
@@ -67,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
     private void MovePlayer(Vector2 move)
     {
-        if (isMoving)
+        if(isMoving)
         {
             playerRigidbody.velocity = move * Time.fixedDeltaTime;
         }
