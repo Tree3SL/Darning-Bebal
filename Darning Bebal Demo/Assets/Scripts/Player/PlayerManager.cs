@@ -50,7 +50,7 @@ public class PlayerManager : MonoBehaviour
         //playerAnimator.enabled = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name != gameObject.name && collision.gameObject.layer != 8)
         {
@@ -58,7 +58,7 @@ public class PlayerManager : MonoBehaviour
             DisableControls();
             animator.PlayStun();
         }
-    }
+    }*/
 
     private void Update()
     {
