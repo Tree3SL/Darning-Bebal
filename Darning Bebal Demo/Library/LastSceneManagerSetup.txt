@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/PlayerDemo.unity
+- path: Assets/Scenes/TestingPlayerInWorld.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
